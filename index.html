@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Weather SPA</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <!-- load bootstrap and fontawesome via CDN -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+
+    </head>
+    <body  ng-app="weatherApp">
+
+        <header>
+			<nav class="navbar navbar-default" style="background-color:rgb(44, 52, 78);">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/" style="color:floralwhite;"> Weather</a>
+				</div>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#" style="color:floralwhite;"><i class="fa fa-home"></i> Home</a></li>
+				</ul>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+            <div ng-view></div>
+
+        </div>
+        
+        <script src="//code.angularjs.org/1.3.0-rc.2/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.3.0-rc.2/angular-route.min.js"></script>
+        <script src="//code.angularjs.org/1.3.0-rc.2/angular-resource.min.js"></script>
+        <script src="app.js"></script>
+        <script src="routes.js"></script>
+        <script src="services.js"></script>
+        <script src="controllers.js"></script>
+        <script src="directives.js"></script>
+
+    </body>
+
+</html>
